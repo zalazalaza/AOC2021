@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def course(filename):
+def power(filename):
     data = np.loadtxt(filename, dtype=str)   
     holder = [0]*len(data[0])
     reversi = [0]*len(data[0])
@@ -67,5 +67,5 @@ def find_co(array, index):
 
 
 if __name__ == "__main__":
-    print(course("3input.txt"))
+    print(power("3input.txt"))
     print(find_ox(np.loadtxt("3input.txt", dtype=str), 0) * (find_co(np.loadtxt("3input.txt", dtype=str), 0)))
