@@ -1,6 +1,6 @@
 import numpy as np
 
-def lowpoints(filename):
+def basins(filename):
     data = np.pad((np.array([list(line.strip()) for line in (open(filename, 'r').readlines())])).astype(int), ((1,1),(1,1)), 'maximum')
     answer = 0
     bottoms  = []
@@ -14,22 +14,22 @@ def lowpoints(filename):
                 bottoms.append((y,x))
                 
     for x in bottoms:
-        h = find_bottom_left(data, x, [])
+        h = find_basins(data, x, [])
         sizes.append(len(h))
     
     sizes.sort(reverse = True)
     
     return (answer, np.prod(sizes[:3]))
 
-def find_bottom_left(array, bottom, new_array):
+def find_basins(array, bottom, new_array):
     neighbors = [(bottom[0], bottom[1]-1), (bottom[0],  bottom[1]+1) , (bottom[0]+1, bottom[1]), (bottom[0]-1, bottom[1])]
     if bottom not in new_array:
         new_array.append(bottom)
     for i in neighbors:
         if array[i[0]][i[1]] < 9 and i not in new_array:
             new_array.append(i)
-            find_bottom_left(array, i, new_array)
+            find_basins(array, i, new_array)
     return new_array
     
 if __name__ == "__main__":
-    print(lowpoints("9input.txt"))
+    print(basins("9input.txt"))
