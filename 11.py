@@ -1,5 +1,4 @@
 import numpy as np
-import copy
 
 def flash(grid):
     if np.any(grid > 9):
