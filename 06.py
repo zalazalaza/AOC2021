@@ -18,4 +18,4 @@ def lantern_fish(filename):
     return total
 
 if __name__ == "__main__":
-    print(lantern_fish("6input.txt"))
+    print(lantern_fish("06.txt"))

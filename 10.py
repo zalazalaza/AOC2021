@@ -63,4 +63,4 @@ def complete_unfinished(corrupt_array, filename):
     return scores[int(len(scores)/2)]
 
 if __name__ == "__main__":
-    print(complete_unfinished(find_corrupt("10input.txt")[0], "10input.txt"))
+    print(complete_unfinished(find_corrupt("10.txt")[0], "10.txt"))

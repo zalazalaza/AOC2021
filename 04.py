@@ -49,6 +49,6 @@ def count_total(array_tuple):
     return score*int(winning_number)
 
 if __name__ == "__main__":
-    print(count_total(reverse_check_cards("4input.txt", "4input_random.txt")))
-    print(count_total(check_cards("4input.txt", "4input_random.txt")))
+    print(count_total(reverse_check_cards("04.txt", "04_random.txt")))
+    print(count_total(check_cards("04.txt", "04_random.txt")))
  

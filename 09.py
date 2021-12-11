@@ -32,4 +32,4 @@ def find_basins(array, bottom, new_array):
     return new_array
     
 if __name__ == "__main__":
-    print(basins("9input.txt"))
+    print(basins("09.txt"))

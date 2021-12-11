@@ -18,5 +18,5 @@ def count_threes(filename):
         
 
 if __name__ ==  "__main__":
-    print(count("1input.txt"))
-    print(count_threes("1input.txt"))
+    print(count("01.txt"))
+    print(count_threes("01.txt"))

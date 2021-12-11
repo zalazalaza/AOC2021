@@ -66,4 +66,4 @@ def get_numbers(filename):
 
 
 if __name__=="__main__":
-    print(get_numbers("8input.txt"))
+    print(get_numbers("08.txt"))

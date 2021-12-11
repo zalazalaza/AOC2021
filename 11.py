@@ -31,5 +31,5 @@ def octo_flash(filename):
     print(score)
 
 if __name__ == "__main__":
-    octo_flash("11input.txt")
+    octo_flash("11.txt")
    

@@ -88,6 +88,6 @@ def diagonal_map(dictionary):
     return ((dictionary["map"] > 1).sum())
 
 if __name__ == "__main__":
-    print(edit_map(create_grid("5input.txt")))
-    print(diagonal_map(create_grid("5input.txt")))
+    print(edit_map(create_grid("05.txt")))
+    print(diagonal_map(create_grid("05.txt")))
 

@@ -36,4 +36,4 @@ def get_complex_frequency(filename):
 
 
 if __name__ == "__main__":
-    print(get_complex_frequency("7input.txt"))
+    print(get_complex_frequency("07.txt"))

@@ -67,5 +67,5 @@ def find_co(array, index):
 
 
 if __name__ == "__main__":
-    print(power("3input.txt"))
-    print(find_ox(np.loadtxt("3input.txt", dtype=str), 0) * (find_co(np.loadtxt("3input.txt", dtype=str), 0)))
+    print(power("03.txt"))
+    print(find_ox(np.loadtxt("03.txt", dtype=str), 0) * (find_co(np.loadtxt("03.txt", dtype=str), 0)))

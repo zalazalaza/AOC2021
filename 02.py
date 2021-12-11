@@ -18,4 +18,4 @@ def course(filename):
     return (forward, depth, forward*depth)
 
 if __name__ == "__main__":
-    print(course("2input.txt"))
+    print(course("02.txt"))
