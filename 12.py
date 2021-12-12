@@ -34,13 +34,8 @@ def next_route(edge_array, current_array, finished_array):
                     new_array.append(value)
                     next_array.append(new_array)                   
     
-    last_items = np.asarray([i[-1] for i in next_array])
 
     if test_array != [] and test_array ==  finished_array:
-        return finished_array
-    if np.all(last_items == "end"):
-        for i in next_array:
-            finished_array.append(i)
         return finished_array
     else:
         return next_route(edge_array,next_array, finished_array)
@@ -51,4 +46,4 @@ def find_path(filename):
     print(len(my_array))
 
 if __name__ == "__main__":
-    find_path("12.txt")
+    find_path("example.txt")
